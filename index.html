@@ -1,289 +1,11 @@
 
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>TRADE WITH RR FOREX | Free Premium Access</title>
-
-<style>
-
-/* OFFER BAR */
-.offer-bar{
-background:linear-gradient(45deg,#ff1744,#ff9100);
-color:#fff;
-padding:10px;
-text-align:center;
-font-weight:bold;
-font-size:14px;
-animation:pulse 1s infinite alternate;
-}
-
-@keyframes pulse{
-from{opacity:0.75;}
-to{opacity:1;}
-}
-
-/* FULL PAGE */
-.page-bg{
-min-height:100vh;
-display:flex;
-align-items:center;
-justify-content:center;
-background:linear-gradient(180deg,#eef4ff,#dce6ff);
-padding:20px;
-}
-
-/* CARD */
-.sk-card{
-max-width:440px;
-width:100%;
-background:#ffffff;
-padding:30px 22px;
-border-radius:22px;
-text-align:center;
-box-shadow:0 20px 45px rgba(0,0,0,0.12);
-font-family:system-ui,-apple-system,"Segoe UI",Arial,sans-serif;
-}
-
-/* LOGO */
-.sk-logo{
-width:95px;
-height:95px;
-border-radius:50%;
-margin:auto;
-display:block;
-border:4px solid #2962ff;
-box-shadow:0 0 18px rgba(41,98,255,0.6);
-object-fit:cover;
-}
-
-/* PREMIUM BADGE */
-.sk-badge{
-margin-top:12px;
-display:inline-block;
-padding:8px 18px;
-border-radius:50px;
-background:linear-gradient(45deg,#ffb300,#ff6f00);
-color:white;
-font-weight:bold;
-font-size:13px;
-box-shadow:0 0 15px rgba(255,160,0,0.8);
-}
-
-/* TITLE */
-.sk-title{
-font-size:23px;
-font-weight:800;
-margin-top:12px;
-color:#0d1b3f;
-}
-
-/* SUBTITLE */
-.sk-subtitle{
-font-size:14px;
-color:#555;
-margin-top:6px;
-}
-
-/* TIMER BOX */
-.timer-box{
-margin-top:16px;
-background:linear-gradient(45deg,#0d47a1,#1a237e);
-color:#00ffd5;
-padding:13px;
-border-radius:14px;
-font-size:16px;
-font-weight:bold;
-letter-spacing:1px;
-box-shadow:0 0 18px rgba(13,71,161,0.7);
-}
-
-/* TRUST */
-.sk-trust{
-margin-top:12px;
-color:#2962ff;
-font-weight:bold;
-}
-
-/* FEATURES */
-.sk-features{
-text-align:left;
-margin-top:18px;
-font-size:14px;
-}
-
-.sk-features p{
-margin:8px 0;
-}
-
-.sk-features span{
-color:#2962ff;
-font-weight:bold;
-}
-
-/* CTA BUTTON */
-.sk-btn{
-margin-top:22px;
-display:block;
-padding:17px;
-background:linear-gradient(45deg,#00e676,#00c853);
-color:#003300;
-font-size:17px;
-font-weight:bold;
-border-radius:16px;
-text-decoration:none;
-box-shadow:0 0 22px rgba(0,230,118,0.9);
-animation:ctaGlow 1.2s infinite alternate;
-}
-
-@keyframes ctaGlow{
-from{transform:scale(1);}
-to{transform:scale(1.06);}
-}
-
-/* INFO */
-.sk-info{
-margin-top:12px;
-font-size:13px;
-font-weight:bold;
-color:#ff1744;
-}
-
-/* DISCLAIMER */
-.sk-disclaimer{
-margin-top:14px;
-font-size:12px;
-color:#777;
-}
-
-/* FOOTER */
-.footer-agency{
-margin-top:16px;
-font-size:13px;
-color:#333;
-}
-
-.footer-agency a{
-color:#2962ff;
-font-weight:bold;
-text-decoration:none;
-}
-
-.footer-agency a:hover{
-text-decoration:underline;
-}
-
-</style>
-
-</head>
-
-<body>
-
-<!-- OFFER BAR -->
-<div class="offer-bar">
-🔥 LIMITED OFFER — Lifetime FREE Premium Forex Learning Access (Only First 100 Users)
-</div>
-
-<div class="page-bg">
-
-<div class="sk-card">
-
-<img src="https://forexwithrr.site/wp-content/uploads/2025/07/tradewithrr-forex-logo.jpg" class="sk-logo">
-
-<div class="sk-badge">
-👑 Professional Forex Mentor
-</div>
-
-<div class="sk-title">
-TRADE WITH RR FOREX
-</div>
-
-<div class="sk-subtitle">
-Live Market Learning • Price Action • Smart Trading System
-</div>
-
-<!-- TIMER -->
-<div class="timer-box">
-⏳ Offer Ends In: <span id="timer"></span>
-</div>
-
-<div class="sk-trust">
-15,000+ Traders Learning With Us 🚀
-</div>
-
-<div class="sk-features">
-
-<p><span>✔</span> Daily Live Market Education</p>
-<p><span>✔</span> Gold (XAUUSD) Strategy Training</p>
-<p><span>✔</span> Smart Entry & Exit Concepts</p>
-<p><span>✔</span> Risk Management Mastery</p>
-<p><span>✔</span> Beginner Friendly System</p>
-<p><span>✔</span> Premium Community Access</p>
-
-</div>
-
-<a href="https://t.me/+w9M9peUrquQxMTJl" class="sk-btn">
-👉 JOIN TELEGRAM FREE NOW
-</a>
-
-<div class="sk-info">
-⚠ Limited Seats Available — Join Before Offer Ends
-</div>
-
-<div class="sk-disclaimer">
-Educational purpose only • No guaranteed profits • Trading involves market risk
-</div>
-
-<div class="footer-agency">
-Maintained By 
-<a href="https://wa.link/y2913g" target="_blank">
-Metamind Digital Agency
-</a>
-</div>
-
-</div>
-
-</div>
-
-<!-- COUNTDOWN SCRIPT -->
-<script>
-
-let endDate = localStorage.getItem("offerEnd");
-
-if(!endDate){
-let now = new Date();
-now.setDate(now.getDate() + 10);
-localStorage.setItem("offerEnd", now);
-endDate = now;
-}
-
-endDate = new Date(endDate).getTime();
-
-setInterval(function(){
-
-let now = new Date().getTime();
-let distance = endDate - now;
-
-if(distance < 0){
-document.getElementById("timer").innerHTML = "OFFER EXPIRED";
-return;
-}
-
-let days = Math.floor(distance / (1000 * 60 * 60 * 24));
-let hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-let minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-let seconds = Math.floor((distance % (1000 * 60)) / 1000);
-
-document.getElementById("timer").innerHTML =
-days+"d "+hours+"h "+minutes+"m "+seconds+"s";
-
-},1000);
-
-</script>
+<title>FOREX_TRADEWITH_CR Community</title>
+<meta name="description" content="Join Forex Focus Community for educational forex market insights, price action learning and risk management training.">
 
 <!-- Meta Pixel Code -->
 <script>
@@ -302,5 +24,180 @@ fbq('track', 'PageView');
 src="https://www.facebook.com/tr?id=904277535914543&ev=PageView&noscript=1"
 /></noscript>
 <!-- End Meta Pixel Code -->
+<style>
+body{
+    font-family: Arial, sans-serif;
+    background:#f4f6f8;
+    margin:0;
+    padding:40px 15px;
+}
+
+.wrapper{
+    max-width:600px;
+    margin:auto;
+    background:#ffffff;
+    padding:30px;
+    border-radius:12px;
+    box-shadow:0 5px 20px rgba(0,0,0,0.1);
+    text-align:center;
+}
+
+.logo{
+    width:120px;
+    border-radius:12px;
+    margin-bottom:15px;
+}
+
+h1{
+    font-size:26px;
+    margin:10px 0;
+    font-weight:800;
+}
+
+.highlight{
+    color:#1e88e5;
+}
+
+.subheading{
+    color:#0f9d58;
+    font-weight:bold;
+    margin-bottom:10px;
+}
+
+.note{
+    font-size:13px;
+    color:#777;
+    margin-bottom:20px;
+}
+
+.features{
+    text-align:left;
+    margin:20px 0;
+    font-size:15px;
+}
+
+.features p{
+    margin:10px 0;
+}
+
+.btn{
+    display:inline-block;
+    background:linear-gradient(45deg,#1b5e20,#2e7d32);
+    color:#fff;
+    padding:16px 45px;
+    border-radius:50px;
+    text-decoration:none;
+    font-size:18px;
+    font-weight:700;
+    margin-top:20px;
+    box-shadow:0 8px 20px rgba(0,0,0,0.25);
+    transition:0.3s;
+}
+
+.btn:hover{
+    transform:scale(1.08);
+    box-shadow:0 12px 30px rgba(0,0,0,0.35);
+}
+
+.timer{
+    margin-top:20px;
+}
+
+.timer span{
+    background:#e3e8ef;
+    padding:10px 20px;
+    border-radius:25px;
+    margin:5px;
+    font-weight:bold;
+    display:inline-block;
+}
+
+.footer{
+    font-size:13px;
+    color:#555;
+    margin-top:25px;
+    line-height:1.6;
+}
+
+.footer a{
+    color:#1e88e5;
+    text-decoration:none;
+    font-weight:bold;
+}
+
+.disclaimer{
+    font-size:11px;
+    color:#999;
+    margin-top:15px;
+    line-height:1.6;
+}
+
+@media(max-width:600px){
+    body{padding:20px 10px;}
+    h1{font-size:22px;}
+}
+</style>
+
+</head>
+<body>
+
+<div class="wrapper">
+
+<img src="https://salmon-mandrill-935968.hostingersite.com/wp-content/uploads/2025/10/focus-forex-logo.jpg" class="logo" alt="Forex Focus Logo">
+
+<h1>
+Learn Forex with 
+<span class="highlight">FOREX_TRADEWITH_CR COMMUNITY</span>
+</h1>
+
+<p class="subheading">
+Unlock the Power of Smart Trading
+</p>
+
+<p class="note">
+No financial advice • Market risk involved
+</p>
+
+<div class="features">
+<p>🚀 Daily Forex Market Analysis</p>
+<p>📊 Accurate Trade Setups & Insights</p>
+<p>📚 Beginner to Advanced Education</p>
+<p>🛡 Risk Management & Capital Protection</p>
+<p>🎯 100% Free Telegram Channel</p>
+</div>
+
+<a href="https://t.me/+w9M9peUrquQxMTJl" target="_blank" class="btn">
+🚀 Join Free Telegram Now
+</a>
+
+<div class="timer">
+<span>08 Min</span>
+<span>24 Sec</span>
+</div>
+
+<p style="margin-top:15px;">
+If you have <strong>Telegram</strong>, you can join instantly
+</p>
+
+<div class="footer">
+Ads managed by Metamind Agency • 
+<a href="https://wa.link/y2913g" target="_blank">Contact for Ads</a>
+<br><br>
+
+By accessing this website, you agree to our 
+<a href="https://forexmind.online/terms-conditions/" target="_blank">Terms & Conditions</a>, 
+<a href="https://forexmind.online/privacy-policy/" target="_blank">Privacy Policy</a> and 
+<a href="https://forexmind.online/disclaimer/" target="_blank">Disclaimer</a>.
+</div>
+
+<div class="disclaimer">
+This website is for educational purposes only and does not provide financial advice. 
+Trading involves risk and capital may be at risk. 
+This site is not a part of Facebook™ or Meta Platforms Inc. 
+This site is NOT endorsed by Facebook™ in any way.
+</div>
+
+</div>
+
 </body>
 </html>
